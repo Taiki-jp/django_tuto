@@ -3,8 +3,11 @@
   {% for x in mymembers %}
   <tr>
     <td>
-      {{x.id}}
+      <a href="update/{{ x.id }}">{{ x.id }}</a>
     </td>
+    <!-- <td>
+      {{x.id}}
+    </td> -->
     <td>
       {{x.firstname}}
     </td>
@@ -12,7 +15,7 @@
       {{x.lastname}}
     </td>
     <td>
-      <a href="delete/" {{ x.id }}>delete</a>
+      <a href="delete/{{ x.id }}">delete</a>
     </td>
   </tr>
   {% endfor %}
